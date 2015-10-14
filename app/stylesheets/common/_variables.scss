@@ -1,0 +1,16 @@
+// Grid
+$small: 768px;
+$medium: 992px;
+$large: 1400px;
+
+// Colors
+$gray-base: #231f20;
+$text-color: lighten($gray-base, 5%);
+$callout-color: #cc5832;
+
+// Rhythm
+$rhythm: floor(1.4 * 18px);
+$half-rhythm: floor($rhythm * 0.5);
+$quarter-rhythm: floor($rhythm * 0.25);
+$double-rhythm: floor($rhythm * 2);
+

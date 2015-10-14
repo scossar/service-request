@@ -3,6 +3,7 @@ module TestelevenHomepage
     register ScssInitializer
     use ConnectionPoolManagement
     register Padrino::Mailer
+    set :delivery_method, :smtp => { :address => 'localhost', :port => 1025 }
     register Padrino::Helpers
 
     enable :sessions

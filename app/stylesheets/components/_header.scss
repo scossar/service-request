@@ -1,0 +1,67 @@
+.site-header .logo img {
+  //padding: $half-rhythm;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $half-rhythm;
+}
+
+.site-header .wrap {
+  padding-top: $half-rhythm;
+  padding-bottom: $half-rhythm;
+  border-bottom: 2px solid;
+}
+
+.menu-toggle {
+  @extend .clearfix;
+  @include span(100%);
+}
+
+.menu-toggle-btn {
+  fill: $gray-base;
+  float: left;
+  border: none;
+  background: transparent;
+}
+
+.site-header .logo {
+  @include span(100%);
+  @media (min-width: $small) {
+    @include span(3 of 12);
+    img {
+      border-right: 2px solid $gray-base;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.site-header .contact {
+  @extend .clearfix;
+  @media (min-width: $small) {
+    @include span(last 9 of 12);
+  }
+}
+
+.site-header .contact a {
+  float: right;
+  border: 1px solid;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #cc5832;
+  padding: 8px 22px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  @media (min-width: $small) {
+    width: auto;
+  }
+}
+
+.site-header .tagline {
+  @include span(100%);
+  @media (min-width: $small) {
+    @include span(last 9 of 12);
+  }
+}

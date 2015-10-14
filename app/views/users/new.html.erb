@@ -1,0 +1,22 @@
+<h2>Contact Us</h2>
+
+<div class="signup-form">
+  <% form_for(@user, '/users/create') do |f| %>
+    <%= f.label :name %>
+    <%= error_message_on @user, :name, :class => "input-error" %>
+    <%= f.text_field :name %>
+
+    <%= f.label :email %>
+    <%= error_message_on @user, :email, :class => "input-error" %>
+    <%= f.email_field :email %>
+
+    <%= f.label :password %>
+    <%= error_message_on @user, :password, :class => "input-error" %>
+    <%= f.password_field :password %>
+
+    <%= f.label :message %>
+    <%= f.text_area :message %>
+
+    <%= f.submit "Contact Us" %>
+  <% end %>
+</div>

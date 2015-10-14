@@ -17,7 +17,17 @@ GEM
     arel (6.0.3)
     builder (3.2.2)
     diff-lcs (1.2.5)
+    discourse_api (0.4.4)
+      faraday (~> 0.9.0)
+      faraday_middleware (~> 0.9)
+      rack (~> 1.5)
     erubis (2.7.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -29,6 +39,7 @@ GEM
     mime-types (1.25.1)
     minitest (5.8.1)
     moneta (0.7.20)
+    multipart-post (2.0.0)
     padrino (0.12.5)
       padrino-admin (= 0.12.5)
       padrino-cache (= 0.12.5)
@@ -90,6 +101,8 @@ GEM
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
     sqlite3 (1.3.11)
+    susy (2.2.6)
+      sass (>= 3.3.0, < 3.5)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -106,13 +119,16 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (>= 3.1)
+  discourse_api
   erubis (~> 2.7.0)
+  factory_girl
   padrino (= 0.12.5)
   rack-test
   rake
   rspec
   sass
   sqlite3
+  susy
 
 BUNDLED WITH
    1.10.6

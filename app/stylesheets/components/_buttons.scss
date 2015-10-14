@@ -1,0 +1,15 @@
+.testeleven-callout {
+  background-color: $callout-color;
+  border: 1px solid $gray-base;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0 0 $gray-base;
+  text-align: center;
+  color: #fff;
+  padding: $half-rhythm;
+  font-size: 22px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+

@@ -1,0 +1,17 @@
+.alert {
+  padding: $half-rhythm;
+  h2 {
+    padding-top: $half-rhythm;
+    margin-top: 0;
+    font-size: 1.33em;
+  }
+  p {
+    padding-bottom: $half-rhythm;
+    margin-bottom: 0;
+  }
+  margin-bottom: $rhythm;
+}
+
+.alert-info {
+  background: lighten($callout-color, 30%);
+}

@@ -1,0 +1,43 @@
+@import "susy";
+
+$susy: (
+  //container: 1100px,
+        gutters: 0.25,
+        global-box-sizing: border-box,
+  //debug: (image: show-columns)
+);
+
+// Page layout
+
+.row {
+  @extend .clearfix;
+  padding: 0 $half-rhythm;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .clearfix;
+  position: relative;
+  //background: #fff;
+}
+
+.container {
+  @include container;
+  @extend .clearfix;
+  @media (min-width: $small) {
+    @include container(12);
+  }
+}
+
+.main {
+  background: #fff;
+  @include span(100%);
+  padding: 0 $half-rhythm;
+  @media (min-width: $small) {
+    @include span(12 of 12);
+  }
+}
+
+

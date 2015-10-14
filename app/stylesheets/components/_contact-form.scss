@@ -1,0 +1,35 @@
+.signup .signup-form label {
+  width: 100%;
+  font-size: 14px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="submit"],
+.signup-form textarea,
+.contact-form input[type="email"],
+.contact-form input[type="submit"],
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: $half-rhythm;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form textarea,
+.contact-form input[type="email"],
+.contact-form textarea {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: $quarter-rhythm;
+}
+
+textarea {
+  min-height: 8em;
+}
+
+.input-error {
+  color: red;
+}

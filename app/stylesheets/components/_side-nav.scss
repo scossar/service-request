@@ -1,0 +1,52 @@
+.side-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $gray-base;
+  color: #fff;
+  @extend .clearfix;
+  a {
+    color: #fff;
+  }
+  //z-index: 0;
+  @media (min-width: $small) {
+    position: relative;
+    background: #fff;
+    color: $gray-base;
+    a {
+      color: $gray-base;
+    }
+    width: auto;
+    @include span(3 of 12);
+
+  }
+}
+
+.nav-stacked-item {
+  padding: $half-rhythm 0 $half-rhythm $half-rhythm;
+}
+
+.nav-stacked {
+  padding-left: 0;
+  padding-right: $rhythm;
+}
+
+.nav-open .main {
+  @media (max-width: $small) {
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+  }
+}
+
+.nav-closed .main {
+  @media (max-width: $small) {
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+  }
+}
+
+.container {
+  overflow-x: hidden;
+}

@@ -1,0 +1,32 @@
+<nav class="side-nav">
+  <div class="basic-box">
+    <ul class="nav-stacked">
+      <li class="nav-stacked-item">
+        <%= link_to 'About', url_for(:page, :about) %>
+      </li>
+      <li class="nav-stacked-item">
+        <%= link_to 'New Websites', url_for(:page, :new_website) %>
+        <ul class="nav-stacked-second-lvl">
+          <li class="nav-stacked-item">
+            <%= link_to 'WordPress', url_for(:page, :wordpress) %>
+          </li>
+          <li class="nav-stacked-item">
+            <%= link_to 'Static Site', url_for(:page, :static_site) %>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-stacked-item">
+        <%= link_to 'Website Repair', url_for(:page, :website_repair) %>
+      </li>
+      <li class="nav-stacked-item">
+        <%= link_to 'Mobile Conversion', url_for(:page, :mobile_conversion) %>
+      </li>
+      <li class="nav-stacked-item">
+        <%= link_to 'Discourse Forum Software', url_for(:page, :discourse) %>
+      </li>
+      <li class="nav-stacked-item">
+        <%= link_to "Contact Us", url_for(:users, :new) %>
+      </li>
+    </ul>
+  </div>
+</nav>
