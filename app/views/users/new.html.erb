@@ -1,22 +1,43 @@
 <h2>Contact Us</h2>
 
-<div class="signup-form">
-  <% form_for(@user, '/users/create') do |f| %>
-    <%= f.label :name %>
-    <%= error_message_on @user, :name, :class => "input-error" %>
-    <%= f.text_field :name %>
+<%= partial 'partials/radio_buttons' %>
 
-    <%= f.label :email %>
-    <%= error_message_on @user, :email, :class => "input-error" %>
-    <%= f.email_field :email %>
+<div id="discourse-entry">
+  <div class="form signup-form">
+    <% form_for(@user, '/users/create') do |f| %>
+      <%= f.label :name %>
+      <%= error_message_on @user, :name, :class => "input-error" %>
+      <%= f.text_field :name %>
 
-    <%= f.label :password %>
-    <%= error_message_on @user, :password, :class => "input-error" %>
-    <%= f.password_field :password %>
+      <%= f.label :email %>
+      <%= error_message_on @user, :email, :class => "input-error" %>
+      <%= f.email_field :email %>
 
-    <%= f.label :message %>
-    <%= f.text_area :message %>
+      <%= f.label :password %>
+      <%= error_message_on @user, :password, :class => "input-error" %>
+      <%= f.password_field :password %>
 
-    <%= f.submit "Contact Us" %>
-  <% end %>
+      <%= f.label :message %>
+      <%= f.text_area :message %>
+
+      <%= f.submit "Contact Us", :class => "testeleven-callout" %>
+    <% end %>
+  </div>
+
+  <div class="form contact-form hidden">
+    <% form_tag '/users/contact', :method => 'post' do %>
+
+      <%= label_tag :name, :for => :name %>
+      <%= text_field_tag :name, :value => params[:name] %>
+
+      <%= label_tag :email, :for => :email %>
+      <%= email_field_tag :email, :value => params[:email] %>
+
+      <%= label_tag :message, :for => :message %>
+      <%= text_area_tag :message, :value => params[:message] %>
+
+      <%= submit_tag "Contact Us", :class => "testeleven-callout" %>
+
+    <% end %>
+  </div>
 </div>

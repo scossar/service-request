@@ -14,6 +14,7 @@ source 'https://rubygems.org'
 gem 'rake'
 
 # Component requirements
+gem 'bcrypt'
 gem 'sass'
 gem 'erubis', '~> 2.7.0'
 gem 'activerecord', '>= 3.1', :require => 'active_record'

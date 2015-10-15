@@ -365,6 +365,9 @@ th {
     .show-for-small {
       display: none; } }
 
+.hidden {
+  display: none; }
+
 .small {
   font-size: 80%; }
 
@@ -588,6 +591,7 @@ th {
 .signup-form input[type="submit"],
 .signup-form textarea,
 .contact-form input[type="email"],
+.contact-form input[type="text"],
 .contact-form input[type="submit"],
 .contact-form textarea {
   width: 100%;
@@ -598,6 +602,7 @@ th {
 .signup-form input[type="password"],
 .signup-form textarea,
 .contact-form input[type="email"],
+.contact-form input[type="text"],
 .contact-form textarea {
   border: 1px solid;
   border-radius: 3px;
@@ -608,6 +613,30 @@ textarea {
 
 .input-error {
   color: red; }
+
+.radio {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.radio-button {
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden; }
+  .radio-button img {
+    max-width: 100%;
+    height: auto; }
+  .radio-button .radio-hide {
+    z-index: 0; }
+  .radio-button .radio-display {
+    z-index: 10; }
+
+.radio-label {
+  display: inline-block;
+  line-height: 36px; }
 
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 /*

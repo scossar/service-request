@@ -7,3 +7,4 @@
 :stylesheet: scss
 :namespace: TestelevenHomepage
 :migration_format: number
+:admin_renderer: erb

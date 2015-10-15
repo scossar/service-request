@@ -8,6 +8,12 @@ module TestelevenHomepage
 
     enable :sessions
 
+    before do
+      @client = DiscourseApi::Client.new("http://localhost:3000/")
+      @client.api_key = "739c19573937b0b9454911f25bcfe5d3fcd555328be6703e1c0ca93530323ddc"
+      @client.api_username = "system"
+    end
+
     ##
     # Caching support.
     #
