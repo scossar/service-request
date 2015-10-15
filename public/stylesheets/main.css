@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -614,29 +615,64 @@ textarea {
 .input-error {
   color: red; }
 
-.radio {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
 .radio-button {
-  height: 36px;
-  width: 36px;
-  display: inline-block;
-  position: relative;
-  overflow: hidden; }
-  .radio-button img {
-    max-width: 100%;
-    height: auto; }
-  .radio-button .radio-hide {
-    z-index: 0; }
-  .radio-button .radio-display {
-    z-index: 10; }
-
-.radio-label {
-  display: inline-block;
-  line-height: 36px; }
+  display: inline-block; }
+  .radio-button input[type=radio]:not(old) {
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0; }
+  .radio-button input[type=checkbox]:not(old) + label,
+  .radio-button input[type=radio]:not(old) + label {
+    display: inline-block;
+    margin-left: -2em;
+    line-height: 1.5em; }
+  .radio-button input[type=checkbox]:not(old) + label > span,
+  .radio-button input[type=radio]:not(old) + label > span {
+    display: inline-block;
+    width: 0.875em;
+    height: 0.875em;
+    margin: 0.25em 0.5em 0.25em 0.25em;
+    border: 0.0625em solid silver;
+    border-radius: 0.25em;
+    background: #e0e0e0;
+    background-image: -moz-linear-gradient(#f0f0f0, #e0e0e0);
+    background-image: -ms-linear-gradient(#f0f0f0, #e0e0e0);
+    background-image: -o-linear-gradient(#f0f0f0, #e0e0e0);
+    background-image: -webkit-linear-gradient(#f0f0f0, #e0e0e0);
+    background-image: linear-gradient(#f0f0f0, #e0e0e0);
+    vertical-align: bottom; }
+  .radio-button input[type=checkbox]:not(old):checked + label > span,
+  .radio-button input[type=radio]:not(old):checked + label > span {
+    background-image: -moz-linear-gradient(#e0e0e0, #f0f0f0);
+    background-image: -ms-linear-gradient(#e0e0e0, #f0f0f0);
+    background-image: -o-linear-gradient(#e0e0e0, #f0f0f0);
+    background-image: -webkit-linear-gradient(#e0e0e0, #f0f0f0);
+    background-image: linear-gradient(#e0e0e0, #f0f0f0); }
+  .radio-button input[type=checkbox]:not(old):checked + label > span:before {
+    content: '✓';
+    display: block;
+    width: 1em;
+    color: #99cc66;
+    font-size: 0.875em;
+    line-height: 1em;
+    text-align: center;
+    text-shadow: 0 0 0.0714em #73994d;
+    font-weight: bold; }
+  .radio-button input[type=radio]:not(old):checked + label > span > span {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.125em;
+    border: 0.0625em solid #73994d;
+    border-radius: 0.125em;
+    background: #99cc66;
+    background-image: -moz-linear-gradient(#b3d98c, #99cc66);
+    background-image: -ms-linear-gradient(#b3d98c, #99cc66);
+    background-image: -o-linear-gradient(#b3d98c, #99cc66);
+    background-image: -webkit-linear-gradient(#b3d98c, #99cc66);
+    background-image: linear-gradient(#b3d98c, #99cc66); }
 
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 /*

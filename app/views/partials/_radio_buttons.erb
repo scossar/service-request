@@ -1,10 +1,8 @@
-<div class="radio-label">New Customer:</div>
-  <div class="radio-button">
-    <%= image_tag 'radioButtonOff_21x21.png', :alt => "radio button off", :class => 'radio radio-hide' %>
-    <%= image_tag 'radioButtonOn_21x21.png', :alt => "radio button on", :class => 'radio radio-display' %>
-  </div>
-<div class="radio-label">Returning Customer:</div>
-  <div class="radio-button">
-    <%= image_tag 'radioButtonOff_21x21.png', :alt => "radio button off", :class => 'radio radio-display' %>
-    <%= image_tag 'radioButtonOn_21x21.png', :alt => "radio button on", :class => 'radio radio-hide' %>
-  </div>
+<div class="radio-button">
+  <input type="radio" name="account-status" value="new" id="new-account" checked>
+  <label for="new-account"><span><span></span></span>New Customer</label>
+</div>
+<div class="radio-button">
+  <input type="radio" name="account-status" id="existing-account" value="returning">
+  <label for="existing-account"><span><span></span></span>Returning Customer</label>
+</div>
